@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage{setspace}    
+\onehalfspacing
+\usepackage{graphicx}    
+\usepackage{amsmath}     
+\usepackage{natbib}      % Para manejar las citas y referencias
+\usepackage{array}       
+\usepackage{multirow}    
+\usepackage{siunitx}     
+\usepackage{textcomp}    
+\usepackage[utf8]{inputenc}  
+\usepackage[spanish,es-tabla]{babel}  
+\usepackage{csquotes}        
+\usepackage[top=1in,right=1in,left=1in,bottom=1in]{geometry} 
+\usepackage{makecell}
+\usepackage{hyperref}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\bibpunct{(}{)}{;}{a}{}{,}
+\parindent 1.5em 
+
+\hypersetup{
+    unicode=true,            % Permitir caracteres no latinos en los marcadores.
+    pdftoolbar=true,         % Mostrar la barra de herramientas de Acrobat.
+    pdfmenubar=true,         % Mostrar el menú de Acrobat.
+    pdffitwindow=false,      % Ajustar la ventana a la página al abrir.
+    pdfstartview={FitH},     % Ajusta el ancho de la página a la ventana.
+    pdftitle={},             % Título del documento.
+    pdfauthor={},            % Autor del documento.
+    pdfsubject={},           % Asunto del documento.
+    pdfcreator={},           % Creador del documento.
+    pdfproducer={},          % Productor del documento.
+    pdfkeywords={},          % Lista de palabras clave.
+    pdfnewwindow=true,       % Abrir enlaces en una nueva ventana.
+    colorlinks=true,         % Enlaces en color (sin recuadro).
+    linkcolor=blue,          % Color de los enlaces internos.
+    citecolor=blue,          % Color de los enlaces a la bibliografía.
+    filecolor=blue,          % Color de los enlaces a archivos.
+    urlcolor=blue            % Color de los enlaces externos.
+}
+\title{SOCI 6015\\ Asignación \textnumero 2}
+
+\author{Pon tu nombre aquí}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\vspace{-1cm}
+\begin{center}
+   A entregarse el 3 de septiembre de 2024. 
+\end{center}
+
+\begin{enumerate}
+    \item Descargarán este documento en el GitHub de la clase, y lo subirán a Overleaf.
+    \item Cambiarán el nombre que sale arriba (al final del preámbulo, poco antes del \texttt{\textbackslash begin\{document\}}, donde dice \texttt{\textbackslash author\{Pon tu nombre aquí\}} y pondrán en su lugar su nombre(s) y apellidos.
+    \item Prestarán atención a la ortografía de la lengua española, asegurándose de colocar acentos, diéresis, o tildes donde deban ir. Para esto, tienen dos opciones 
+    \begin{enumerate}
+         \item si su teclado estuviera en español, usen los símbolos donde es menester,
+        \item si su teclado no estuviera en español, está la opción indicada en clase de usar \texttt{\textbackslash} y el símbolo necesario (por ejemplo, \textbackslash'\ para acento (\'a), \textbackslash "\  para diéresis (\"u), \textbackslash \~\ para \~n)
+        \item Alternativamente, si prefiriera escribir en inglés \underline{la tarea entera}, podrá hacerlo, ciñéndose estrictamente a una de las tres ortografías principales de ese idioma, es decir, inglés británico, inglés Oxford, o inglés estadounidense.
+    \end{enumerate}
+    \item Completarán como mejor sea posible la tarea, y podrán, si entienden necesario hacerlo, trabajar la tarea con compañeres de clase. Si así lo hicieren, pondrán antes de la sección 1 una oración indicándome con quién(es) trabajó la tarea. De lo contrario, dejarán la línea que está actualmente escrita.
+    \item  Una vez terminen, apretarán el símbolo de descarga (a la derecha del botón de Compilar, con flecha descendiente), y descargarán el PDF para enviarlo a mi persona.
+    \item Someterán esta tarea de manera impresa. El Centro Académico de Cómputos de la Facultad de Ciencias Sociales (CACCS) dispone de un centro de impresión gratuito tanto para estudiantes de la Facultad así como de los de otras facultades (como humanidades). La diferencia entre facultades radica en cuántas hojas podrán imprimir por cada ocasión (20 páginas para los de FCS, 10 para otras facultades). Para imprimir su documento envíenlo a \href{mailto:centroacademicocomputos.fcs@upr.edu}{centroacademicocomputos.fcs@upr.edu}. El horario de servicio para impresión gratuita es de 8:15-11:50 y  13:00-15:00. Si estas horas no resultaran posibles, entonces infórmemelo a mi correo-e y le brindaré una alternativa para trabajar las partes que se piden a mano
+\end{enumerate}
+
+\section*{Ejercicio 1: Análisis de una muestra de edades}
+
+Dadas las siguientes edades de una muestra de una encuesta:
+\[
+\text{Edades: } 18, 18, 31, 32, 32, 35, 35, 36, 42, 46, 47, 48, 50, 61, 62
+\]
+
+\textbf{Parte 1:} Haga una tabla de frecuencias a mano o en formato tabla de \LaTeX para las edades de esta muestra.
+
+\vspace{5cm} % Espacio para la tabla de frecuencias
+
+\textbf{Parte 2:} Encuentre las siguientes medidas estadísticas, e indique cómo llegó a ellas, a través de fórmula o una sencilla explicación del método:
+\begin{enumerate}
+    \item La media
+    \item La mediana
+    \item La varianza
+    \item La desviación estándar
+\end{enumerate}
+
+
+
+\textbf{Parte 3:} Cree un histograma a mano de estos datos.
+
+\vspace{8cm} % Espacio para dibujar el histograma
+
+\section*{Ejercicio 2: Manipulación de la fórmula del puntaje Z}
+
+Dada la fórmula del puntaje Z:
+\[
+Z = \frac{x_i - \mu}{\sigma}
+\]
+donde \(Z\) es el puntaje Z, \(x_i\) es el valor observado, \(\mu\) es la media de la distribución, y \(\sigma\) es la desviación estándar de la distribución.
+
+Ahora, tienes un puntaje Z, pero deseas calcular la puntuación bruta \(x_i\), cuya fórmula se discutió en clase.
+
+\textbf{Instrucciones:}
+
+\begin{enumerate}
+    \item Muestra detalladamente cómo puedes manipular la fórmula del puntaje Z para despejar \(x_i\).
+    \item Realiza todas las operaciones algebraicas necesarias y explica cada paso.
+    \item Llega a la fórmula final para \(x_i\):
+    \[
+    x_i = Z \cdot \sigma + \mu
+    \]
+\end{enumerate}
+\vspace{1cm}
+\section*{Ejercicio 3: Cálculo del puntaje Z y probabilidad}
+
+Para la tabla de puntajes Z usen \href{https://estadistica-dma.ulpgc.es/estadFCM/pdf/distribuciones.pdf}{la tabla enlazada aquí}.\\ \textit{N.B.: recuerden que en una gran cantidad de países hispanófonos la coma decimal se usa en lugar del punto decimal.}
+
+\textbf{Parte 1:}
+
+Un examen tiene una media de 75 y una desviación estándar de 8. Un estudiante obtuvo un puntaje de 90. Calcula el puntaje Z para este estudiante y luego usa la tabla de la distribución normal para determinar la probabilidad de obtener un puntaje mayor que 90 en este examen.
+
+\vspace{4cm} % Espacio para cálculos del puntaje Z y probabilidad
+
+\textbf{Parte 2:}
+
+La altura promedio de una población es de 170 cm con una desviación estándar de 10 cm. Si una persona, como su profesor, midiera 178 cm, ¿cuál es su puntaje Z? Luego, usando la tabla de la distribución normal, calcula la probabilidad de que una persona seleccionada al azar de esta población mida menos de 178 cm. 
+
+\vspace{4cm} % Espacio para cálculos del puntaje Z y probabilidad
+
+\end{document}

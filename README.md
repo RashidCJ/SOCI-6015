@@ -1,6 +1,8 @@
-# SOCI-6015: Cuantitativo
+# SOCI-6015: Métodos cuantitativos
 
 Este repositorio contiene materiales y recursos para el curso **SOCI-6015: Técnicas de computadora en la investigación sociológica: alcances y límites**. 
+
+Recuerden que el manual que uso para referencia en  R se puede conseguir en [LeanPub](https://leanpub.com/dslibro). Añado que el material también se puede ver en sendas páginas en inglés creadas también por el autor [Parte 1](http://rafalab.dfci.harvard.edu/dsbook-part-1/) y [Parte 2](http://rafalab.dfci.harvard.edu/dsbook-part-2/). En el curso usamos ambas partes porque quier que se familiaricen con R/RStudio, y dispongan de herramientas para visualizar y manipular datos (parte 1), así como las estadísticas llevadas a cabo por métodos computacionales (parte 2).
 
 ## Contenidos del Repositorio
 
@@ -12,7 +14,7 @@ Este repositorio contiene materiales y recursos para el curso **SOCI-6015: Técn
 
 ## Uso del Repositorio
 
-Este repositorio está destinado a apoyar a los estudiantes del curso. Se recomienda que los estudiantes clonen o descarguen el repositorio para acceder a los recursos y utilicen GitHub para versionar sus propios proyectos y tareas. Para cualquier duda o soporte, se recomienda revisar la [guía de GitHub](https://docs.github.com/es/get-started/start-your-journey) o [contactar al profesor](mailto:rmarcano@iu.edu).
+Este repositorio está destinado a apoyar a los estudiantes del curso. Se recomienda que los estudiantes clonen o descarguen el repositorio para acceder a los recursos y utilicen GitHub para versionar sus propios proyectos y tareas. Para cualquier duda o soporte, se recomienda revisar la [guía de GitHub](https://docs.github.com/es/get-started/start-your-journey) o [contactar al profesor](mailto:rashid.marcano@upr.edu).
 
 ## Contribuciones
 
@@ -21,4 +23,4 @@ Los estudiantes y colaboradores están invitados a sugerir mejoras a los recurso
 ---
 
 **Nota**: Este repositorio y los recursos en él están sujetos a cambios a lo largo del curso. Revisa periódicamente para asegurarte de tener la versión más actualizada de los materiales.
-versión 1.1 (2024-VIII-16).
+versión 1.15 (2024-IX-11).

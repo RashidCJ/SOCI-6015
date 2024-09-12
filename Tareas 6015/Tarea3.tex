@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{setspace}    
+\onehalfspacing
+\usepackage{graphicx}    
+\usepackage{amsmath}     
+\usepackage{natbib}      % Para manejar las citas y referencias
+\usepackage{array}       
+\usepackage{multirow}    
+\usepackage{siunitx}     
+\usepackage{textcomp}    
+\usepackage[utf8]{inputenc}  
+\usepackage[spanish,es-tabla]{babel}  
+\usepackage{csquotes}        
+\usepackage[top=1in,right=1in,left=1in,bottom=1in]{geometry} 
+\usepackage{makecell}
+\usepackage{hyperref}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{dsfont} 
+
+\bibpunct{(}{)}{;}{a}{}{,}
+\parindent 1.5em 
+
+\hypersetup{
+    unicode=true,            % Permitir caracteres no latinos en los marcadores.
+    pdftoolbar=true,         % Mostrar la barra de herramientas de Acrobat.
+    pdfmenubar=true,         % Mostrar el menú de Acrobat.
+    pdffitwindow=false,      % Ajustar la ventana a la página al abrir.
+    pdfstartview={FitH},     % Ajusta el ancho de la página a la ventana.
+    pdftitle={},             % Título del documento.
+    pdfauthor={},            % Autor del documento.
+    pdfsubject={},           % Asunto del documento.
+    pdfcreator={},           % Creador del documento.
+    pdfproducer={},          % Productor del documento.
+    pdfkeywords={},          % Lista de palabras clave.
+    pdfnewwindow=true,       % Abrir enlaces en una nueva ventana.
+    colorlinks=true,         % Enlaces en color (sin recuadro).
+    linkcolor=blue,          % Color de los enlaces internos.
+    citecolor=blue,          % Color de los enlaces a la bibliografía.
+    filecolor=blue,          % Color de los enlaces a archivos.
+    urlcolor=blue            % Color de los enlaces externos.
+}
+\title{SOCI 6015\\ Asignación \textnumero 3}
+
+\author{Pon tu nombre aquí}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\vspace{-1cm}
+\begin{center}
+   A entregarse el 3 de septiembre de 2024. 
+\end{center}
+
+\begin{enumerate}
+    \item Descargarán este documento en el GitHub de la clase (o del correo que reciban), y lo subirán a Overleaf.
+    \item Cambiarán el nombre que sale arriba (al final del preámbulo, poco antes del \texttt{\textbackslash begin\{document\}}, donde dice \texttt{\textbackslash author\{Pon tu nombre aquí\}} y pondrán en su lugar su nombre(s) y apellidos.
+    \item Prestarán atención a la ortografía de la lengua española, asegurándose de colocar acentos, diéresis, o tildes donde deban ir. Para esto, tienen dos opciones 
+    \begin{enumerate}
+         \item si su teclado estuviera en español, usen los símbolos donde es menester,
+        \item si su teclado no estuviera en español, está la opción indicada en clase de usar \texttt{\textbackslash} y el símbolo necesario (por ejemplo, \textbackslash'\ para acento (\'a), \textbackslash "\  para diéresis (\"u), \textbackslash \~\ para \~n)
+        \item Alternativamente, si prefiriera escribir en inglés \underline{la tarea entera}, podrá hacerlo, ciñéndose estrictamente a una de las tres ortografías principales de ese idioma, es decir, inglés británico, inglés Oxford, o inglés estadounidense.
+    \end{enumerate}
+    \item Completarán como mejor sea posible la tarea, y podrán, si entienden necesario hacerlo, trabajar la tarea con compañeres de clase. Si así lo hicieren, pondrán antes de la sección 1 una oración indicándome con quién(es) trabajó la tarea. %De lo contrario, dejarán la línea que está actualmente escrita.
+    \item  Una vez terminen, apretarán el símbolo de descarga (a la derecha del botón de Compilar, con flecha descendiente), y descargarán el PDF para enviarlo a mi persona (\href{mailto:rashid.marcano@upr.edu}{rashid.marcano@upr.edu}).
+%    \item Someterán esta tarea de manera impresa. El Centro Académico de Cómputos de la Facultad de Ciencias Sociales (CACCS) dispone de un centro de impresión gratuito tanto para estudiantes de la Facultad así como de los de otras facultades (como humanidades). La diferencia entre facultades radica en cuántas hojas podrán imprimir por cada ocasión (20 páginas para los de FCS, 10 para otras facultades). Para imprimir su documento envíenlo a \href{mailto:centroacademicocomputos.fcs@upr.edu}{centroacademicocomputos.fcs@upr.edu}. El horario de servicio para impresión gratuita es de 8:15-11:50 y  13:00-15:00. Si estas horas no resultaran posibles, entonces infórmemelo a mi correo-e y le brindaré una alternativa para trabajar las partes que se piden a mano
+\end{enumerate}
+\newpage
+\section*{Ejercicio 1: Muestreo \textit{(3pts)}} 
+Dado los muestreos probabilísticos discutidos, identifique cuál de los métodos sería más adecuado para un estudio sobre los niveles de satisfacción con el sistema de salud en Puerto Rico. Explique su razonamiento.
+
+\vspace{5cm} % Espacio para contestación.
+
+\section*{Ejercicio 2: Parámetros poblacionales y estadísticas de muestra \textit{(5pts)}} 
+
+Dadas los siguientes datos de una muestra:
+\[
+\text{Edades: } 53, 85, 102, 63, 35, 18, 39, 47, 54, 71, 5, 44, 42, 38, 21,  50
+\]
+
+\textbf{Parte 1:} Calcule y exprese con el símbolo correcto 
+\begin{enumerate}
+    \item La media aritmética
+    \item La varianza
+    \item La desviación estándar
+\end{enumerate}
+\vspace{3cm} % Espacio 
+\textbf{Parte 2:} Calcule ahora como si fueran resultados representando a la población, con símbolo adecuado
+\begin{enumerate}
+    \item[4.] La media
+    \item[5.] La varianza
+    \item[6.] La desviación estándar
+\end{enumerate}
+\vspace{3cm} % Espacio 
+
+\textbf{Parte 3:} Cree un histograma en \texttt{R} o \texttt{RStudio} de estos datos. No use paquetes como \texttt{ggplot2} para este histograma. Una vez guarde la imagen generada, insértela a \LaTeX y asegúrese de poner un pie de calce comentando el código que usó para llegar a la imagen generada.
+\vspace{3cm} % Espacio 
+
+
+\section*{Ejercicio 3: Probabilidades \textit{(9pts)}} 
+La fórmula de probabilidad es
+\[
+P(\text{evento}) = \frac{\text{Número de resultados favorables}}{\text{Número total de resultados posibles}}
+\]
+
+Cuando hay eventos donde sólo tiene dos opciones de resultados, la probabilidad de que no ocurra un evento es el complemento de la probabilidad de que sí ocurra.
+
+\[
+P(\text{éxito}) = 1 - P(\text{no éxito}), \text{ y por consiguiente } 
+\]
+\[
+P(\text{al menos un evento}) = 1 - P(\text{ningún evento})^n
+\]
+
+\textbf{Parte 1:} Use la siguiente situación para calcular la probabilidad ‘\textit{P(evento)=...}’, muestre pasos: 
+\begin{enumerate}
+    \item En una clase de 30 estudiantes, 8 de ellos hablan francés. Si seleccionara un estudiante al azar, ¿cuál es la probabilidad de que hable francés?
+
+    \item Calcule la probabilidad de que al lanzar una peseta 10 veces al aire, la misma caiga dando cruz al menos una vez. \textit{Consejo: piensen en los lanzamientos como eventos independientes.}
+\end{enumerate}
+\vspace{2cm} % Espacio 
+
+\textbf{Parte 2: Usando la Distribución Binomial}
+
+Cuando hay eventos independientes repetidos, la probabilidad de obtener un número específico de éxitos está dada por la distribución binomial:
+
+\[
+\mathds{P}(k \text{ éxitos en } n \text{ intentos}) = \binom{n}{k} p^k (1-p)^{n-k}
+\]
+Donde: $n$ = número total de intentos, $k$ = número de veces que queremos el resultado deseado (éxitos), $p$ = probabilidad de éxito en un solo intento, $\binom{n}{k}$ es el coeficiente binomial, que representa las diferentes formas en que se pueden obtener $k$ éxitos en $n$ intentos.
+
+Ahora que ya vimos ejemplos más básicos, consideremos un caso más complejo, esta vez usando la distribución binomial. \textit{Nota: Aunque no hemos trabajado con la distribución binomial en profundidad, este ejercicio les ayudará a familiarizarse con su estructura. Si necesitan ayuda adicional, no duden en venir a mis horas de oficina o enviarme un correo-e.}
+
+\begin{enumerate}
+\item[3.] Calcule la probabilidad de que al lanzar una peseta 10 veces al aire, la misma caiga dando siete cruces. Use la fórmula binomial:
+\end{enumerate}
+\vspace{3cm} % Espacio
+
+\section*{Ejercicio 4: Pruebas de hipótesis \textit{(3pts)}} 
+\begin{enumerate}
+    \item Escriba una hipótesis direccional para un estudio que investigue si los hombres en Puerto Rico tienen mayor participación política que las mujeres.
+    \item Formule una hipótesis no direccional sobre la relación entre nivel de ingreso y nivel educativo en la población adulta de Puerto Rico.
+
+    \item ¿Qué tipo de prueba usarías (una cola o dos colas) para cada una de las hipótesis anteriores? Explica tu respuesta.
+
+\end{enumerate}
+
+
+\end{document}

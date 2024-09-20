@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{times}
+\usepackage{setspace}    
+\onehalfspacing
+\usepackage{graphicx}    
+\usepackage{amsmath}     
+\usepackage{natbib}      % Para manejar las citas y referencias
+\usepackage{array}       
+\usepackage{multirow}    
+\usepackage{siunitx}     
+\usepackage{textcomp}    
+\usepackage[utf8]{inputenc}  
+\usepackage[spanish,es-tabla]{babel}  
+\usepackage{csquotes}        
+\usepackage[top=1in,right=1in,left=1in,bottom=1in]{geometry} 
+\usepackage{makecell}
+\usepackage{hyperref}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{dsfont} 
+
+\bibpunct{(}{)}{;}{a}{}{,}
+\parindent 1.5em 
+
+\hypersetup{
+    unicode=true,            % Permitir caracteres no latinos en los marcadores.
+    pdftoolbar=true,         % Mostrar la barra de herramientas de Acrobat.
+    pdfmenubar=true,         % Mostrar el menú de Acrobat.
+    pdffitwindow=false,      % Ajustar la ventana a la página al abrir.
+    pdfstartview={FitH},     % Ajusta el ancho de la página a la ventana.
+    pdftitle={},             % Título del documento.
+    pdfauthor={},            % Autor del documento.
+    pdfsubject={},           % Asunto del documento.
+    pdfcreator={},           % Creador del documento.
+    pdfproducer={},          % Productor del documento.
+    pdfkeywords={},          % Lista de palabras clave.
+    pdfnewwindow=true,       % Abrir enlaces en una nueva ventana.
+    colorlinks=true,         % Enlaces en color (sin recuadro).
+    linkcolor=blue,          % Color de los enlaces internos.
+    citecolor=blue,          % Color de los enlaces a la bibliografía.
+    filecolor=blue,          % Color de los enlaces a archivos.
+    urlcolor=blue            % Color de los enlaces externos.
+}
+\title{SOCI 6015\\ Asignación \textnumero 4}
+
+\author{Pon tu nombre aquí}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\vspace{-1cm}
+\begin{center}
+   A entregarse el martes 24 de septiembre de 2024. 
+\end{center}
+
+\begin{enumerate}
+    \item Descargarán este documento en el GitHub de la clase (o del correo que reciban), y lo subirán a Overleaf.
+    \item Cambiarán el nombre que sale arriba (al final del preámbulo, poco antes del \texttt{\textbackslash begin\{document\}}, donde dice \texttt{\textbackslash author\{Pon tu nombre aquí\}} y pondrán en su lugar su nombre(s) y apellidos.
+    \item Prestarán atención a la ortografía de la lengua española, asegurándose de colocar acentos, diéresis, o tildes donde deban ir. %Para esto, tienen dos opciones 
+%    \begin{enumerate}
+%         \item si su teclado estuviera en español, usen los símbolos donde es menester,
+%        \item si su teclado no estuviera en español, está la opción indicada en clase de usar \texttt{\textbackslash} y el símbolo necesario (por ejemplo, \textbackslash'\ para acento (\'a), \textbackslash "\  para diéresis (\"u), \textbackslash \~\ para \~n)
+%        \item Alternativamente, si prefiriera escribir en inglés \underline{la tarea entera}, podrá hacerlo, ciñéndose estrictamente a una de las tres ortografías principales de ese idioma, es decir, inglés británico, inglés Oxford, o inglés estadounidense.
+%    \end{enumerate}
+    \item Completarán como mejor sea posible la tarea, y podrán, si entienden necesario hacerlo, trabajar la tarea con compañeres de clase. Si así lo hicieren, pondrán antes de la sección 1 una oración indicándome con quién(es) trabajó(aron) la tarea. %De lo contrario, dejarán la línea que está actualmente escrita.
+    \item  Una vez terminen, apretarán el símbolo de descarga (a la derecha del botón de Compilar, con flecha descendiente), y descargarán el PDF para enviarlo a mi persona (\href{mailto:rashid.marcano@upr.edu}{rashid.marcano@upr.edu}).
+%    \item Someterán esta tarea de manera impresa. El Centro Académico de Cómputos de la Facultad de Ciencias Sociales (CACCS) dispone de un centro de impresión gratuito tanto para estudiantes de la Facultad así como de los de otras facultades (como humanidades). La diferencia entre facultades radica en cuántas hojas podrán imprimir por cada ocasión (20 páginas para los de FCS, 10 para otras facultades). Para imprimir su documento envíenlo a \href{mailto:centroacademicocomputos.fcs@upr.edu}{centroacademicocomputos.fcs@upr.edu}. El horario de servicio para impresión gratuita es de 8:15-11:50 y  13:00-15:00. Si estas horas no resultaran posibles, entonces infórmemelo a mi correo-e y le brindaré una alternativa para trabajar las partes que se piden a mano
+\end{enumerate}
+\newpage
+\section*{Ejercicio 1: Puntaje Z \textit{(1pts)}} 
+\noindent
+Una variable aleatoria sigue una distribución normal con media  $\mu = 1,000$  y desviación estándar  $\sigma = 150$.
+\begin{enumerate}
+    \item[a.] Calcule la probabilidad de que un valor tomado al azar de esta distribución sea menor que 850. (0.5 puntos)
+
+    \item[b.] Calcule el puntaje Z correspondiente al valor de 850 y use la tabla de distribución normal estándar \href{https://estadistica-dma.ulpgc.es/estadFCM/pdf/distribuciones.pdf}{ enlazada aquí} para encontrar la probabilidad solicitada. (0.5 puntos)
+    \end{enumerate}
+\vspace{2em}
+\section*{Ejercicio 2: Contrastando hipótesis \textit{(9pts)}} 
+\noindent
+En una población, la media de ingresos es  $\mu = \$45,000$  con una desviación estándar  $\sigma = \$5,000$. Una investigadora cree que los egresados de una universidad específica ganan más que el promedio nacional. La investigadora toma una muestra de 25 egresados y encuentra una media muestral de  $\bar{x} = \$47,000$.
+
+\begin{enumerate}
+    \item[a.] Plantee la hipótesis nula ($H_0$) y la hipótesis alternativa ($H_1$) para este escenario. (1pts)
+    \item[b.] Calcule el estadístico o puntaje Z para esta muestra. (1pts)
+    \item[] Recuerde que el estadístico se expresa $Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}$
+    \item[c.] Al nivel de significancia  $\alpha = 0.05$, ¿puede el investigador concluir que los egresados de esta universidad ganan más que el promedio nacional? Justifique su respuesta. (1pts)
+    \item[ch.] ¿Cuál es el tamaño del efecto de ser un egresado de la universidad específica? (2pts)
+    \item[d.] Calcule el intervalo de confianza del 95\% para la media poblacional de los egresados de esta universidad utilizando la siguiente de intervalo de confianza. (2pts)
+    \item[] El intervalo de confianza se calcula como $IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right) $ y en este caso se pide que use  $Z_{0.025} = 1.96$  para un nivel de confianza del 95\%.
+    \item[e.] Finalmente, concluya qué cosa se puede hacer para mejorar la potencia estadística para un futuro estudio. Justifique el porqué. (2pts)
+\end{enumerate}
+
+\section*{Ejercicio 3: Pregunta de investigación cuantitativa \textit{(10pts)}} 
+\noindent
+Desarrolle una propuesta breve para una investigación que utilice métodos cuantitativos.
+\begin{enumerate}
+    \item[a.] Plantee una pregunta de investigación clara y específica sobre un tema de su interés que pueda ser abordada con métodos cuantitativos. (3 puntos)
+    \item[b.] Indique si su enfoque es deductivo o inductivo, y explique por qué. (2 puntos) 
+    \item[c.] Identifique una o más bases de datos existentes que podría utilizar para recopilar los datos necesarios, o describa cómo obtendría los mismos. (1 puntos)
+    \item[ch.]  Explique si utilizaría datos transversales  o longitudinales, y justifique su elección. (2 puntos)
+\end{enumerate}
+
+
+
+\end{document}

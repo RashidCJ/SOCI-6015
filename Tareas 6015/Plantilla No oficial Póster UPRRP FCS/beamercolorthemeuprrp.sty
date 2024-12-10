@@ -1,0 +1,51 @@
+% \ProvidesPackage{beamerthemeUPRRP}
+
+% Load the base theme
+% \usepackage{beamerthemeshadow}
+
+% Define UPRRP colors
+\definecolor{UPRRed}{HTML}{E70033}
+\definecolor{UPRGray}{HTML}{CED0D1} %CED0D1 %BABCBE real UPRGray
+\definecolor{UPRBlack}{HTML}{261C02}
+\definecolor{UPRWhite}{HTML}{FFFFFF}
+
+% Background and foreground
+\setbeamercolor{background canvas}{bg=UPRWhite}
+\setbeamercolor{normal text}{fg=UPRBlack}
+\setbeamercolor{alerted text}{fg=UPRRed}
+
+% Title and sections
+\setbeamercolor{frametitle}{fg=UPRWhite, bg=UPRRed}
+\setbeamercolor{title}{fg=UPRWhite, bg=UPRRed}
+\setbeamercolor{section in toc}{fg=UPRRed, bg=UPRGray}
+
+% Blocks
+\setbeamercolor{block title}{fg=UPRWhite, bg=UPRRed}
+\setbeamercolor{block body}{fg=UPRBlack, bg=UPRGray}
+\setbeamercolor{block title example}{fg=UPRWhite, bg=UPRBlack}
+\setbeamercolor{block body example}{fg=UPRBlack, bg=UPRWhite}
+
+% Itemize, enumerate, etc.
+\setbeamercolor{item projected}{bg=UPRRed, fg=UPRWhite}
+\setbeamercolor{enumerate item}{fg=UPRRed}
+
+% Navigation symbols (optional)
+\setbeamercolor{navigation symbols dimmed}{fg=UPRBlack}
+\setbeamercolor{navigation symbols}{fg=UPRRed}
+
+% Additional styling
+\setbeamercolor{subsection in toc}{fg=UPRBlack, bg=UPRGray}
+\setbeamercolor{frametitle continuation}{fg=UPRWhite, bg=UPRBlack}
+
+% Footer and headline
+\setbeamercolor{headline}{fg=UPRWhite, bg=UPRRed}
+\setbeamercolor{footline}{fg=UPRWhite, bg=UPRBlack}
+\setbeamercolor{title in head/foot}{fg=UPRWhite, bg=UPRRed}
+\setbeamercolor{author in head/foot}{fg=UPRWhite, bg=UPRBlack}
+
+% % Apply theme
+% \mode<presentation>
+% {
+%   \useoutertheme{default}
+%   \usecolortheme{UPRRP}
+% }

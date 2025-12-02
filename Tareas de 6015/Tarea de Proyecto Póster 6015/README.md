@@ -1,72 +1,96 @@
-# Gemini Unofficial Oxford Version [![Build Status](https://github.com/anishathalye/gemini/workflows/CI/badge.svg)](https://github.com/anishathalye/gemini/actions?query=workflow%3ACI)
+# Gemini UPR-RP FCS
 
-This is an unofficial adaptation of the modern LaTeX [beamerposter] theme, Gemini, tailored for the University of Oxford.
+Adaptación no oficial del tema [Gemini][gemini] de [beamerposter] para la Facultad de Ciencias Sociales de la Universidad de Puerto Rico, Recinto de Río Piedras.
 
 <p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini.pdf">
-<img src="https://raw.githubusercontent.com/MaxMLang/assets/master/ox-poster.png">
-</a>
+<img src="assets/poster-preview.png" alt="Vista previa del póster" width="800">
 </p>
 
-For a general-purpose beamer presentation theme, see [Auriga].
+## Características
 
-## Oxford Customizations
+* Colores institucionales de la UPR-RP y la Facultad de Ciencias Sociales
+* Espacios predefinidos para logos institucionales
+* Texto de ejemplo en español con guías para cada sección
+* Tamaño de póster estándar (36" × 24")
 
-* Integrated University of Oxford branding guidelines
-* Example templates featuring the Oxford color scheme and logo placement
-* Additional font support to match Oxford's branding (where applicable)
+## Dependencias
 
-## Dependencies
+* Una instalación de TeX que incluya [LuaTeX] o pdfLaTeX
+    * `latexmk` es necesario si desea usar el `Makefile` incluido
+* Paquetes de LaTeX incluyendo beamerposter (normalmente incluidos en su instalación de TeX, disponibles en [CTAN] si no)
+* Fuentes [Raleway] y [Lato], ambas disponibles bajo Open Font License
 
-* A TeX installation that includes [LuaTeX]
-    * `latexmk` is needed for using the provided `Makefile`
-* LaTeX package dependencies including beamerposter (typically part of your TeX installation, available on [CTAN] if not)
-* [Raleway] and [Lato] fonts, both available under Open Font License, and any additional fonts recommended by the University's branding guidelines
+## Uso
 
-## Usage
+1. Clone o descargue los archivos de este repositorio
+2. Configure `poster.tex` con el tamaño de papel, distribución de columnas y escala deseados
+3. Reemplace los logos en la carpeta `logos/` con los logos correspondientes a su departamento o facultad
+4. Modifique el contenido de cada bloque según su investigación
+5. Compile con `make` o directamente con `pdflatex poster.tex`
 
-1. Copy or clone the files from this repository
+## Estructura del proyecto
 
-1. Configure `poster.tex` with your desired paper size, column layout, and scale adjustments as needed
+```
+.
+├── poster.tex              # Archivo principal
+├── beamerthemegemini.sty   # Tema base Gemini
+├── beamercolorthemeUPRRP.sty  # Colores UPR-RP FCS
+├── logos/                  # Logos institucionales
+│   ├── Logo_FCS_UPRRP.png
+│   └── el logo.png
+├── imagenes/               # Imágenes para el póster
+└── poster.bib              # Referencias bibliográficas
+```
 
-1. Customize `beamercolorthemegemini.sty` by copying it and modifying the `\usecolortheme` line in `poster.tex` to theme your poster to Oxford's branding (optional but recommended for university-related presentations)
+## Personalización
 
-1. Use `make` to compile your poster
+### Colores
 
-## FAQ
+El tema `UPRRP` incluye los colores institucionales. Puede modificarlos en `beamercolorthemeUPRRP.sty` o crear su propio tema de color.
 
-For common questions, such as adding an institution logo or customizing the color theme further, consult the [FAQ] in the Wiki.
+### Tamaño del póster
 
-## Themes
+El tamaño predeterminado es 91.44 cm × 60.96 cm (36" × 24"). Para modificarlo, ajuste la línea en `poster.tex`:
 
-The Oxford version includes several color themes suitable for various types of presentations:
+```latex
+\usepackage[size=custom,width=91.44,height=60.96,scale=1.0]{beamerposter}
+```
 
-* `gemini` (default)
-* `ox` (customized for University of Oxford branding)
-* `mit`
-* `labsix`
+### Columnas
 
-You're encouraged to create your own color theme or use the `ox` theme for presentations associated with the University.
+La plantilla usa tres columnas: dos laterales estrechas y una central más ancha. Puede ajustar las proporciones modificando:
 
-## Design Goals
+```latex
+\setlength{\colwidth}{0.27\paperwidth}        % Columnas laterales
+\setlength{\centralcolwidth}{0.38\paperwidth} % Columna central
+```
 
-* **Minimal**: Focuses on readability and simplicity.
-* **Batteries Included**: Ready to use with minimal setup.
-* **Easy Theming**: Simplified process to create or modify themes.
+## Tipos de bloques
 
-## Contributing
+La plantilla incluye varios tipos de bloques:
 
-Contributions such as bug reports, new themes, and enhancements are welcome! Design is subjective, so early feedback through issues or pull requests is encouraged.
+| Bloque | Uso sugerido |
+|--------|--------------|
+| `block` | Contenido general, texto, metodología |
+| `alertblock` | Hallazgos importantes, advertencias |
+| `exampleblock` | Ejemplos, ecuaciones destacadas |
 
-## License
+## Créditos
 
-Copyright (c) 2018-2022 Anish Athalye. This unofficial Oxford version is released under the MIT License. See [LICENSE.md][license] for details.
+Esta plantilla es una adaptación de:
 
+* [Gemini](https://github.com/anishathalye/gemini) por Anish Athalye
+* [Gemini Oxford](https://github.com/andiac/gemini-cam) - versión para University of Oxford
+
+## Licencia
+
+Copyright (c) 2018-2022 Anish Athalye (tema Gemini original).
+
+Adaptación para UPR-RP FCS liberada bajo la licencia MIT. Ver [LICENSE.md](LICENSE.md) para más detalles.
+
+[gemini]: https://github.com/anishathalye/gemini
 [beamerposter]: https://github.com/deselaers/latex-beamerposter
-[Auriga]: https://github.com/anishathalye/auriga
 [LuaTeX]: http://www.luatex.org/
 [CTAN]: https://ctan.org/
 [Raleway]: https://www.fontsquirrel.com/fonts/raleway
 [Lato]: https://www.fontsquirrel.com/fonts/lato
-[license]: LICENSE.md
-[FAQ]: https://github.com/anishathalye/gemini/wiki/FAQ

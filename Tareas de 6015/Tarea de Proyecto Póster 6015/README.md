@@ -82,6 +82,8 @@ Esta plantilla es una adaptación de:
 * [Gemini](https://github.com/anishathalye/gemini) por Anish Athalye
 * [Gemini Oxford](https://github.com/andiac/gemini-cam) - versión para University of Oxford
 
+Adaptación para UPR-RP FCS por Rashid CJ Marcano Rivera.
+
 ## Licencia
 
 Copyright (c) 2018-2022 Anish Athalye (tema Gemini original).

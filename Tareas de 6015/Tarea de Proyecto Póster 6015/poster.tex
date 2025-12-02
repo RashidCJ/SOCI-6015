@@ -1,0 +1,258 @@
+% Unofficial University of Oxford Poster Template
+% https://github.com/andiac/gemini-cam
+% a fork of https://github.com/anishathalye/gemini
+
+\documentclass[final]{beamer}
+\usepackage[spanish, mexico]{babel}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=91.44,height=60.96,scale=1.0]{beamerposter} % centermeter
+
+\usetheme{gemini}
+\usecolortheme{UPRRP}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.02\paperwidth} % 5% del ancho
+\setlength{\colwidth}{0.27\paperwidth} % 25% del ancho (primera y tercera columnas)
+\newlength{\centralcolwidth}
+\setlength{\centralcolwidth}{0.38\paperwidth} % 40% del ancho (columna central)
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\title{Proyecto de investigación}
+
+\author{Rashid Marcano Rivera \inst{1} \and Yamil Ortiz Ortiz \inst{2}}
+
+\institute[shortinst]{\inst{1} Departamento de Sociología y Antropología \samelineand \inst{2} Centro de Investigaciones Sociales}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+  \href{https://www.example.com}{https://www.example.com} \hfill
+  Conferencia ABC 2025, San Juan, Puerto Rico --- Subtítulo-1234 \hfill
+  \href{mailto:juan.del.pueblo@upr.edu}{juan.del.pueblo@upr.edu}}
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+% Refer to https://github.com/k4rtik/uchicago-poster
+% logo: https://communications.admin.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/the-oxford-logo
+% use this to include logos on the left and/or right side of the header:
+\logoright{\includegraphics[height=7cm]{logos/Logo_FCS_UPRRP.png}}
+\logoleft{\includegraphics[height=7cm]{logos/el logo.png}}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Título de Bloque}
+
+    Contenido de un bloque, y texto de relleno. En esta sección se presenta el contexto de la investigación. Incluya el problema de estudio, su relevancia y los antecedentes teóricos o empíricos que fundamentan el trabajo. Puede mencionar brevemente la pregunta de investigación o hipótesis.
+
+    %Recuerde que un póster efectivo comunica ideas de forma clara y concisa. Evite saturar los bloques con demasiado texto; priorice la legibilidad y apoye sus argumentos con elementos visuales cuando sea posible.
+
+  \end{block}
+
+  \begin{block}{Bloque conteniendo listado}
+
+Aquí se presenta la evidencia previa relevante al tema de estudio. Incluya hallazgos de investigaciones anteriores que fundamenten su trabajo y establezcan qué sabemos hasta ahora sobre el fenómeno. La literatura existente ha documentado relaciones importantes entre variables socioeconómicas clave. Por ejemplo, estudios previos han encontrado asociaciones entre:
+
+    \begin{itemize}
+      \item \textbf{Desigualdad de ingreso} y políticas de empleo y capacitación laboral
+      \item \textbf{Inversión pública} y movilidad social intergeneracional
+      \item \textbf{Acceso a servicios} y desarrollo comunitario.
+    \end{itemize}
+
+    Estos hallazgos orientan las preguntas que guían la presente investigación.
+
+  \end{block}
+
+  \begin{alertblock}{Bloque enfatizado}
+
+    Este bloque llama la atención, quizás \textbf{algo importante} debiera ir aquí.
+
+    \begin{itemize}
+      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In
+        consequat, nibh sed mattis luctus, augue diam fermentum lectus.
+      \item \textbf{In euismod erat metus} non ex. Vestibulum luctus augue in
+        mi condimentum, at sollicitudin lorem viverra.
+    \end{itemize}
+
+  \end{alertblock}
+
+  \begin{block}{Nam cursus consequat egestas}
+
+    Nulla eget sem quam. Ut aliquam volutpat nisi vestibulum convallis. Nunc a
+    lectus et eros facilisis hendrerit eu non urna. Interdum et malesuada fames
+    ac ante \textit{ipsum primis} in faucibus. Etiam sit amet velit eget sem
+    euismod tristique. Praesent enim erat, porta vel mattis sed, pharetra sed
+    ipsum. Morbi commodo condimentum massa, \textit{tempus venenatis} massa
+    hendrerit quis. 
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\centralcolwidth}
+
+  \begin{block}{Bloque con enumerado e imagen}
+Quō ūsque tandem abūtere, Catilīna, patientiā nostrā? Quam diū etiam furor iste tuus nōs ēlūdet? Quem ad fīnem sēsē effrēnāta iactābit audācia?
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{imágenes/Ingreso mediano distrito representativo.png}
+    \caption{Pie de calce de figura.}
+\end{figure}
+
+
+    \begin{enumerate}
+      \item \textbf{Portus Divensis (2018):} Ingressus medianus per districtum repræsentativum, secundum census publicus, variat inter regiones urbanas et rusticas. Analysis huiusmodi reddit evidentiam disparitatum œconomicorum inter municipia et districtum.
+      \item \textbf{Cras vehicula blandit urna ut maximus}. Aliquam blandit nec
+        massa ac sollicitudin. Curabitur cursus, metus nec imperdiet bibendum,
+        velit lectus faucibus dolor, quis gravida metus mauris gravida turpis.
+      \item \textbf{Vestibulum et massa diam}. Phasellus fermentum augue non
+        nulla accumsan.
+    \end{enumerate}
+Maecenas sed porta est. Praesent mollis interdum lectus, sit amet sollicitudin risus tincidunt.
+  \end{block}
+
+  \begin{block}{Bloque con gráfico seno coseno}
+
+    Et rutrum ex euismod vel. Pellentesque ultricies, velit in fermentum
+    vestibulum, lectus nisi pretium nibh, sit amet aliquam lectus augue vel
+    velit. Suspendisse rhoncus massa porttitor augue feugiat molestie. Sed
+    molestie ut orci nec malesuada. Sed ultricies feugiat est fringilla
+    posuere.
+
+    \begin{figure}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+            scale only axis,
+            no markers,
+            domain=0:2*pi,
+            samples=100,
+            axis lines=center,
+            axis line style={-},
+            ticks=none]
+          \addplot[red] {sin(deg(x))};
+          \addplot[blue] {cos(deg(x))};
+        \end{axis}
+      \end{tikzpicture}
+      \caption{Pie de calce.}
+    \end{figure}
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{exampleblock}{Bloque enfatizado con ecuación}
+
+    Otro tipo de bloque enfatizado.
+
+    $$
+    \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
+    $$
+
+    Interdum et malesuada fames $\{1, 4, 9, \ldots\}$ ac ante ipsum primis in
+    faucibus. Cras eleifend dolor eu nulla suscipit suscipit. Sed lobortis non
+    felis id vulputate.
+
+    \heading{Encabezado dentro de bloque}
+
+    Praesent consectetur mi $x^2 + y^2$ metus, nec vestibulum justo viverra
+    nec. Proin eget nulla pretium, egestas magna aliquam, mollis neque. Vivamus
+    dictum $\mathbf{u}^\intercal\mathbf{v}$ sagittis odio, vel porta erat
+    congue sed. Maecenas ut dolor quis arcu auctor porttitor.
+
+    \heading{Otra seccioncita iniciada con encabezado}
+
+    Sed augue erat, scelerisque a purus ultricies, placerat porttitor neque.
+    Donec $P(y \mid x)$ fermentum consectetur $\nabla_x P(y \mid x)$ sapien
+    sagittis egestas. Duis eget leo euismod nunc viverra imperdiet nec id
+    justo.
+
+  \end{exampleblock}
+
+  \begin{block}{Nullam vel erat at velit convallis laoreet}
+
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
+    scelerisque congue diam. Fusce dapibus dui ut augue pulvinar iaculis.
+
+    \begin{table}
+      \centering
+      \begin{tabular}{l r r c}
+        \toprule
+        \textbf{1.\textsuperscript{\underline{a}} columna} & \textbf{2.\textsuperscript{\underline{a}} columna} & \textbf{3.\textsuperscript{\underline{a}} columna} & \textbf{4.\textsuperscript{\underline{a}} columna} \\
+        \midrule
+        Foo & 13.37 & 384,394 & $\alpha$ \\
+        Bar & 2.17 & 1,392 & $\beta$ \\
+        Baz & 3.14 & 83,742 & $\delta$ \\
+        Qux & 7.59 & 974 & $\gamma$ \\
+        \bottomrule
+      \end{tabular}
+      \caption{Leyenda de tabla.}
+    \end{table}
+
+
+  \end{block}
+
+  \begin{block}{Referencias}
+
+    \nocite{*}
+    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
